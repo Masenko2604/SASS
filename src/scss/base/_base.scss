@@ -1,28 +1,60 @@
-@use "reset";
+@use "../utilities/mixins";
 
-.badge {
-  display: inline-block;
-  min-width: 96px;
-  padding: 4px 8px;
+html {
+  font-size: 8px;
 
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0.07px;
+  @include mixins.viewport-md {
+    font-size: 10px;
+  }
+}
+
+body {
+  font-family: "Montserrat";
+  background: var(--main-color);
+  color: var(--main-text-color);
+  font-size: 2.4rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.wrapper {
+  min-height: 100vh;
   text-align: center;
-  color: #ffffff;
-
-  border-radius: 20px;
+  display: flex;
+  flex-flow: column;
 }
 
-.badge-completed {
-  background-color: #a461d8;
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.badge-ended {
-  background-color: #fc5a5a;
+.dark {
+  color-scheme: dark;
 }
 
-.badge-active {
-  background-color: #82c43c;
+.title {
+  font-size: 4rem;
+
+  span {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    @include mixins.text-gradient;
+  }
+}
+
+.footer {
+  padding: 3rem 0;
+  font-size: 1.6rem;
+
+  a {
+    text-decoration: none;
+    color: var(--brand-color);
+    transition: 0.2s ease;
+
+    &:hover {
+      color: var(--brand-light-color);
+    }
+  }
 }
