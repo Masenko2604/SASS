@@ -5,13 +5,53 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/sass.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lesson 07</title>
+  <title>Lesson 12</title>
   <script type="module" crossorigin src="/sass/assets/index-59f321f8.js"></script>
   <link rel="stylesheet" href="/sass/assets/index.css">
 </head>
 
 <body>
-  <button class="small-btn" type="button">Click me</button>
+  <div class="notification notification-primary">
+    <svg class="notification-icon" width="20" height="20">
+      <use href="/sass/assets/icons.svg#icon-primary"></use>
+    </svg>
+
+    <p class="notification-text">Primary</p>
+
+    <button class="notification-btn" aria-label="Close button">
+      <svg class="notification-btn-icon" width="16" height="16">
+<use href="/sass/assets/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="notification notification-success">
+    <svg class="notification-icon" width="20" height="20">
+      <use href="/sass/assets/icons.svg#icon-check"></use>
+    </svg>
+
+    <p class="notification-text">Success</p>
+
+    <button class="notification-btn" aria-label="Close button">
+      <svg class="notification-btn-icon" width="16" height="16">
+        <use href="/sass/assets/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+  
+  <div class="notification notification-success">
+    <svg class="notification-icon" width="20" height="20">
+      <use href="/sass/assets/icons.svg#icon-info"></use>
+    </svg>
+  
+    <p class="notification-text">Info</p>
+  
+    <button class="notification-btn" aria-label="Close button">
+      <svg class="notification-btn-icon" width="16" height="16">
+        <use href="/sass/assets/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
   
   
 </body>
